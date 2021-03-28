@@ -1,5 +1,5 @@
 const clientId = `e898edfadc744b9c9de0e3d4a2f93a42`;
-const redirectUri = `http://localhost:3000/`;
+const redirectUri = `http://stupid-knee.surge.sh`;
 let accessToken;
 
 const Spotify = {
@@ -50,7 +50,7 @@ const Spotify = {
     },
 
     savePlayList(name, trackUris){
-        if(!name || !trackUris.length){
+        if(name && trackUris.length){
             return;
         }
 
